@@ -1,8 +1,8 @@
 {
   "name": "seo-mask",
   "version": "0.0.1",
-  "description": "create seo mask for spa",
-  "main": "index.js",
+  "description": "create a SEO friendly website for SPA  --  为单页应用创建一个适合蜘蛛爬取seo网站",
+  "main": "seo-mask.js",
   "directories": {
     "example": "example"
   },
@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "ejs": "^2.6.1"
   }
 }
