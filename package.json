@@ -1,0 +1,17 @@
+{
+  "name": "seo-mask",
+  "version": "0.0.1",
+  "description": "create seo mask for spa",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

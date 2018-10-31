@@ -1,0 +1,8 @@
+<div>
+  <ul>
+    博客列表
+    <% post_list.map((item) => { %>
+    <li><a href="/blog/<%= item.id-%>" target="_blank"><%= item.title-%></a></li>
+    <% })%>
+  </ul>
+</div>
