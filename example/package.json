@@ -117,6 +117,7 @@
     "cors": "^2.8.4",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "http-proxy-middleware": "^0.19.0"
+    "http-proxy-middleware": "^0.19.0",
+    "mockjs": "^1.0.1-beta3"
   }
 }
