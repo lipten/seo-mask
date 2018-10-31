@@ -1,3 +1,10 @@
+var extend = function(destination,source) {
+  for(var property in source) {
+      destination[property] = source[property]
+  }
+  return destination
+}
+
 const default_opt = {
   routes: {},
   tdk_config: {},
@@ -5,7 +12,7 @@ const default_opt = {
 }
 
 module.exports = function(opt) {
-  const {routes, tdk_config, layout_render} = {...default_opt, ...opt}
+  const {routes, tdk_config, layout_render} = extend(default_opt, opt)
   return (req, res, next) => {
     // 各大搜索引擎蜘蛛UA
     const spiderUA = /Baiduspider|bingbot|Googlebot|360spider|Sogou| Yahoo! Slurp/
@@ -22,12 +29,12 @@ module.exports = function(opt) {
             var tdk_data = tdk_config[tdk_routes[0]]
             for (let j=0,tdk; tdk = tdk_routes[j]; j++) {
               if (new RegExp(tdk).test(req.path)) {
-                tdk_data = {...tdk_data, ...tdk_config[tdk]}
+                tdk_data = extend(tdk_data, tdk_config[tdk])
                 break;
               }
             }
             // 从默认TDK配置中匹配到对应路径的tdk，与seo里的tdk合并
-            result.tdk = !result.tdk ? tdk_data : {...tdk_data, ...result.tdk}
+            result.tdk = !result.tdk ? tdk_data : extend(tdk_data, result.tdk)
             res.set({
               'Content-Type': 'text/html',
               'charset': 'utf-8mb4',

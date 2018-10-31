@@ -27,7 +27,7 @@ export default class Blog extends Component {
           <p>
             在命令行测试：<Badge variant="secondary">{`curl ${location.href} -H 'user-agent: Baiduspider'`}</Badge>
           </p>
-          <p><Button variant="info">了解seo-mask</Button></p>
+          <p><Button variant="info" onClick={() => window.open('https://github.com/lipten/seo-mask/blob/master/README.md')}>了解seo-mask</Button></p>
         </Jumbotron>
         {
           post_list.map((item) => {
