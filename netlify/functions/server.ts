@@ -1,5 +1,4 @@
 // YOUR_BASE_DIRECTORY/netlify/functions/api.ts
-require('module-alias/register');
 import app from '../../example/scripts/app'
 import serverless from 'serverless-http';
 

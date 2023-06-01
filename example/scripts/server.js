@@ -1,4 +1,3 @@
-require('module-alias/register');
 var app = require('./app');
 
 var port = 8010
