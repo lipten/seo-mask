@@ -3,7 +3,7 @@
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
-  included_files = ['example/seo/**']
+  included_files = ['example/**']
   
 [[redirects]]
   force = true
