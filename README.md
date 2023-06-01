@@ -15,7 +15,7 @@ seo-mask是利用搜索引擎蜘蛛的爬取原理（蜘蛛只会爬取网页的
 * express作为启动服务器(后期会陆续推出适配不同服务器的版本)
 
 # Demo
-[一个简易的博客网站](http://seo_mask.lipten.link)
+[一个简易的博客网站](http://seo-mask.codeasily.net/)
 
 
 Demo网站是一个基于cra开发的简易博客示例，在该项目的example目录，你可以下载下来本地运行：
