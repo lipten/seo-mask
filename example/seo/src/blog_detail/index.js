@@ -1,7 +1,7 @@
 const ejs = require('ejs')
 const fs = require('fs')
 const path = require('path')
-const template = fs.readFileSync(path.resolve(__dirname, './index.ejs'), 'utf8');
+const template = fs.readFileSync(path.resolve('example/seo/src/blog_detail/index.ejs'), 'utf8');
 const axios = require('axios');
 
 // 由于mock服务跟web服务在同一个服务器里，不能用axios调用同一个服务器里的服务

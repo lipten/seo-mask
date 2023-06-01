@@ -1,8 +1,12 @@
+[build]
+  publish = "example/build/"
+
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
+  
 [[redirects]]
   force = true
-  from = "*"
+  from = "/*"
   status = 200
-  to = "/.netlify/functions/api/:splat"
+  to = "/.netlify/functions/server/:splat"
