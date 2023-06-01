@@ -1,9 +1,9 @@
-[build]
-  publish = "example/build/"
+
 
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
+  included_files = ['example/seo/**']
   
 [[redirects]]
   force = true
