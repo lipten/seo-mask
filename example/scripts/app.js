@@ -14,10 +14,10 @@ app.use(require('../../seo-mask')({
   tdk_config: require('../seo/tdk'),
   layout_render: require('../seo/src/layout'),
 }));
-app.use(express.static(path.join('example/build/')));
+app.use(express.static(path.resolve('example/build/')));
 
 app.use((req, res, next) => {
-  res.send(fs.readFileSync(path.join('example/build/index.html'), {encoding: 'utf-8'}))
+  res.send(fs.readFileSync(path.resolve('example/build/index.html'), {encoding: 'utf-8'}))
 })
 
 
