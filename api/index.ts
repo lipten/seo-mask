@@ -12,4 +12,4 @@ import app from '../example/scripts/app'
 
 // export const handler = serverless(app);
 
-model.exports = app;
+module.exports = app;
