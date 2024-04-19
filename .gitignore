@@ -20,3 +20,4 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
+.vercel
